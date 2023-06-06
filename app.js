@@ -54,6 +54,7 @@ app.post('/',(req,res)=>{
     res.send(vari)
 })
 
-app.listen(3000,()=>{
+app.listen(3000,(port = 3000)=>{
     console.log("Hola mundo")
+    console.log("Servidor corriendo en 127.0.0.1:"+port);
 })
